@@ -1,0 +1,13 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<!--헤드 부분을 완전 바꿔치기 해버린다. -> base.html 로 완전히 바꿔치기 해버린다.-->
+<head th:replace="template/layout/base :: common_header(~{::title},~{::link})">
+
+<!--    물론 th:href 이 부분은 없기 때문에 불러지진 않는다.-->
+    <title>메인 타이틀</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/themes/smoothness/jquery-ui.css}">
+
+</head>
+<body> 메인 컨텐츠</body>
+</html>
